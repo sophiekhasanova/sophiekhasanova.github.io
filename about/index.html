@@ -227,6 +227,13 @@ img.par{height:100% !important}
 .crow.cmail > span:nth-child(2),.crow.cmail > span:last-child{flex:1 1 100% !important}
 .crow.cmail > span:last-child > *{flex:1;justify-content:center}
 }
+
+.fh{margin:0;font-family:'Funnel Display',sans-serif;font-weight:600;font-size:20px;letter-spacing:-0.015em;line-height:1.2}
+.fact .fe{margin-bottom:2px}
+.fh + p{margin-top:-6px !important}
+@media (max-width:1100px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+@media (max-width:900px){.skgrid{grid-template-columns:1fr !important}}
+@media (max-width:600px){.fgrid{grid-template-columns:1fr !important}}
 </style>
 
 </head>
@@ -292,29 +299,29 @@ Hi! Yes, this is really me.
 <section aria-labelledby="do-h" style="max-width:1320px;margin:0 auto;padding:0 40px clamp(80px,10vw,140px)">
 <div class="rv" style="display:flex;flex-direction:column;gap:12px;margin-bottom:clamp(32px,4vw,48px)">
 <h2 id="do-h" style="margin:0;font-family:'Funnel Display',sans-serif;font-weight:600;font-size:clamp(36px,4.2vw,60px);letter-spacing:-0.035em;line-height:1">What I do</h2>
-<p style="margin:0;color:#5E626B;font-size:18px">The things I enjoy most and do best.</p>
+<p style="margin:0;color:#5E626B;font-size:18px">What I can help your team with.</p>
 </div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px">
+<div class="skgrid" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
 <article class="sk rv2">
 <span class="sksel" aria-hidden="true"><span>Card / Skill</span></span>
 <span aria-hidden="true" class="skic" style="background:#EFE8FF"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E3BE0" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"></rect><path d="M3 9h18M9 9v11"></path></svg></span>
 <h3 class="skh">Product &amp; UI/UX</h3>
-<p class="skp">Interfaces that feel clear and easy from the very first click.</p>
-<ul class="skl"><li>User flows and wireframes</li><li>Interfaces for web and mobile</li><li>Design systems and components</li><li>Landing pages</li></ul>
+<p class="skp">Clear, user-friendly interfaces for web and mobile products.</p>
+<ul class="skl"><li>User flows and wireframes</li><li>Web and mobile interfaces</li><li>Design systems and UI kits</li><li>Landing pages</li></ul>
 </article>
 <article class="sk rv2">
 <span class="sksel" aria-hidden="true"><span>Card / Skill</span></span>
 <span aria-hidden="true" class="skic" style="background:#E6ECFB"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E6BFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14"></path></svg></span>
 <h3 class="skh">Design to code</h3>
-<p class="skp">I bring my own designs to life, so nothing gets lost along the way.</p>
-<ul class="skl"><li>Working prototypes with Claude Code</li><li>Sites in Webflow and Framer</li><li>Testing and fixing on real screens</li></ul>
+<p class="skp">I turn my Figma designs into working prototypes and websites.</p>
+<ul class="skl"><li>Working prototypes with Claude Code</li><li>Websites in Webflow and Framer</li><li>Checking every screen before launch</li></ul>
 </article>
 <article class="sk rv2">
 <span class="sksel" aria-hidden="true"><span>Card / Skill</span></span>
 <span aria-hidden="true" class="skic" style="background:#FFF1E3"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D9700F" stroke-width="1.8" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2.5"></rect><path d="M10.5 9.5v5l4-2.5z" fill="#D9700F"></path></svg></span>
 <h3 class="skh">Creatives &amp; content</h3>
-<p class="skp">Graphic visuals, advertising creatives and social media content.</p>
-<ul class="skl"><li>Ad creatives for social</li><li>Post and Stories templates</li><li>Content plans</li><li>Reels edited in CapCut</li></ul>
+<p class="skp">Graphic design, ad creatives and social media content for brands.</p>
+<ul class="skl"><li>Ad creatives for social media</li><li>Post and Stories templates</li><li>Content plans</li><li>Reels edited in CapCut</li></ul>
 </article>
 </div>
 </section>
@@ -341,10 +348,13 @@ Hi! Yes, this is really me.
 <section aria-labelledby="off-h" style="max-width:1320px;margin:0 auto;padding:0 40px clamp(80px,10vw,140px)">
 <div class="rv" style="display:flex;flex-direction:column;gap:12px;margin-bottom:clamp(32px,4vw,48px)">
 <h2 id="off-h" style="margin:0;font-family:'Funnel Display',sans-serif;font-weight:600;font-size:clamp(36px,4.2vw,60px);letter-spacing:-0.035em;line-height:1">Off the clock</h2>
-<p style="margin:0;color:#5E626B;font-size:18px">A few things about me outside of work.</p>
+<p style="margin:0;color:#5E626B;font-size:18px">What I enjoy outside of work.</p>
 </div>
-<ul style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:20px">
-<li class="fact rv2" style="--r:-1.4deg"><span class="fe" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E3BE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 11v3M5.5 12.5h3"/><circle cx="16" cy="11.5" r=".6" fill="#6E3BE0"/><circle cx="18" cy="13.5" r=".6" fill="#6E3BE0"/></svg></span><p>I love playing games, and I always notice their menus and onboarding. A designer’s habit.</p></li><li class="fact rv2" style="--r:1.1deg"><span class="fe" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E3BE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></span><p>I run about five TikTok accounts, so I see every day what makes people stop and watch.</p></li><li class="fact rv2" style="--r:-0.7deg"><span class="fe" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E3BE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16v11H4zM4 8l3-4h12l-3 4M9 4l-2 4M14 4l-2 4"/></svg></span><p>Fan edits of movies and anime taught me timing, and I still use it in motion, Reels and ads.</p></li><li class="fact rv2" style="--r:1.4deg"><span class="fe" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E3BE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><p>I’m creating my own horror game, so I know what it takes to bring an idea all the way to the finish.</p></li>
+<ul class="fgrid" style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px">
+<li class="fact rv2" style="--r:-1.4deg"><span class="fe" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E3BE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 11v3M5.5 12.5h3"/><circle cx="16" cy="11.5" r=".6" fill="#6E3BE0"/><circle cx="18" cy="13.5" r=".6" fill="#6E3BE0"/></svg></span><h3 class="fh">Gaming</h3><p>I spend a lot of time playing games. I’m naturally drawn to their worlds, visual styles, interfaces and storytelling.</p></li>
+<li class="fact rv2" style="--r:1.1deg"><span class="fe" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E3BE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><h3 class="fh">Game development</h3><p>I’m working on my own horror game, exploring game design, storytelling and development along the way.</p></li>
+<li class="fact rv2" style="--r:-0.7deg"><span class="fe" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E3BE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16v11H4zM4 8l3-4h12l-3 4M9 4l-2 4M14 4l-2 4"/></svg></span><h3 class="fh">Movies, anime &amp; fan edits</h3><p>I love movies, series and anime. I used to make fan edits, and I still enjoy experimenting with visuals, motion and timing.</p></li>
+<li class="fact rv2" style="--r:1.4deg"><span class="fe" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E3BE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16v4M17 18h4"/></svg></span><h3 class="fh">Creative experiments</h3><p>I enjoy trying new tools, exploring different creative ideas and making things just because I can.</p></li>
 </ul>
 </section>
 
