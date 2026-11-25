@@ -757,24 +757,98 @@ html {
     transform: translateY(-10px);
   }
 }
-@keyframes lid {
-  0%,
-  100% {
-    transform: none;
-  }
-  35%,
-  70% {
-    transform: translateY(-16px) rotate(-14deg);
-  }
+/* Archive 001 card */
+.arc {
+  aspect-ratio: 4/3;
+  background: #12110f;
+  color: #ece5d6;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 16px 16px;
+  gap: 10px;
 }
-@keyframes hop {
-  0%,
-  100% {
-    transform: none;
+.arc-bar {
+  display: flex;
+  justify-content: space-between;
+  font: 500 10px/1 ui-monospace, Menlo, monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8f877a;
+}
+.arc-title {
+  font-family: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif;
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.arc-wall {
+  margin-top: auto;
+  overflow: hidden;
+  border-top: 1px solid #2c2925;
+  padding-top: 10px;
+}
+.arc-track {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  animation: arc-drift 14s ease-in-out infinite alternate;
+}
+.arc-obj {
+  width: 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.arc-pic {
+  height: 70px;
+  border-radius: 3px;
+  background: #1d1b18;
+  position: relative;
+}
+.arc-pic::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.arc-lens::after {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #9fb3c2, #2b3a45 60%, #0d1114);
+  box-shadow: 0 0 0 5px #3a352e;
+}
+.arc-vase::after {
+  width: 26px;
+  height: 48px;
+  border-radius: 40% 40% 30% 30% / 25% 25% 45% 45%;
+  background: linear-gradient(90deg, #6e3b23, #b8693b 45%, #5a2f1c);
+}
+.arc-shell::after {
+  width: 44px;
+  height: 34px;
+  border-radius: 50% 50% 46% 46% / 62% 62% 38% 38%;
+  background: repeating-radial-gradient(circle at 50% 100%, #e4d3b8 0 4px, #b99c76 4px 6px);
+}
+.arc-radio::after {
+  width: 52px;
+  height: 32px;
+  border-radius: 4px;
+  background: radial-gradient(circle at 30% 50%, #2a2520 0 8px, transparent 9px),
+    repeating-linear-gradient(90deg, #8a7a62 0 2px, #6d604d 2px 4px);
+}
+.arc-cap {
+  font: 400 9px/1.2 ui-monospace, Menlo, monospace;
+  color: #8f877a;
+  white-space: nowrap;
+}
+@keyframes arc-drift {
+  from {
+    transform: translateX(0);
   }
-  35%,
-  70% {
-    transform: translateY(-6px);
+  to {
+    transform: translateX(calc(-100% + 180px));
   }
 }
 .wgrid {
@@ -982,7 +1056,8 @@ html {
   .rv2,
   .par,
   .pin,
-  .hdr {
+  .hdr,
+  .arc-track {
     animation: none;
   }
   html {
